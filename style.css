@@ -1,0 +1,138 @@
+
+html,
+body {
+    background: var(--default);
+}
+
+:root {
+    --default: #121213;
+    --empty: #3a3a3c;
+    --wrong: #b59f3b;
+    --right: #538d4e;
+    --lesser:#55acee;
+    --greater:#dd2e44;
+}
+
+.title {
+  font-family: "Bradley Hand"; 
+  font-size: 4rem; 
+  text-align: center; 
+  padding: 20px;
+  margin: 20px 0;
+  letter-spacing: 2px; 
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px 0 0 0; 
+    font-family: "Bradley Hand"; 
+    font-size: 0.9rem; 
+    z-index: 1000; 
+  }
+
+#game {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(5, auto);
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--empty);
+    margin: 4px;
+    color: white;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+}
+
+.box.empty {
+    background: linear-gradient(180deg, var(--empty) 50%, var(--right) 50%);
+}
+
+.box.wronglesser {
+    background: linear-gradient(180deg, var(--wrong) 50%, var(--lesser) 50%);
+}
+
+.box.wronggreater {
+    background: linear-gradient(180deg, var(--wrong) 50%, var(--greater) 50%);
+}
+
+
+.box.notlesser {
+    background: linear-gradient(180deg, var(--empty) 50%, var(--lesser) 50%);
+}
+
+.box.notgreater {
+    background: linear-gradient(180deg, var(--empty) 50%, var(--greater) 50%);
+}
+
+.box.correct {
+    background: var(--right);
+}
+
+
+.container {
+  border: 2px solid #000;
+  padding: 4cqh;
+  max-width: 450px;
+  margin: 20px auto;
+  }
+  
+.item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.itemlast {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1px;
+}
+
+
+.btn {
+    padding: 10px 60px;
+    background-color: #3a3a3c;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+
+.description {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.desc-top,
+.desc-bottom {
+  line-height: 2;
+}
+
+.subheading {
+    font-family: "Bradley Hand"; 
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 1px;
+    letter-spacing: 1px; 
+}

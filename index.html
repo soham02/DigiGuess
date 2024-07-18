@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wordle</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div id="game">
+            <div class="title" >DigiGuess</div>
+            <div class="subheading">Guess a 5 digit number where each digit is unique.</div>
+            <div class="subheading">Digits can be from 0 to 9</div>
+            <div class="grid">
+            </div>
+        </div>
+        <div class="container">
+            <div class="item">
+                <div class="box correct"></div>
+                <div class="description">
+                    <span class="desc-top">Digit is present in final answer and is in the correct spot.</span>
+                    <br>
+                    <span class="desc-bottom">Digit in that place is equal to the digit you enter.</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box wronglesser"></div>
+                <div class="description">
+                    <span class="desc-top">Digit is present in final answer but is in wrong spot.</span>
+                    <br>
+                    <span class="desc-bottom">Digit in that place is less than the Digit you enter.</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box wronggreater"></div>
+                <div class="description">
+                    <span class="desc-top">Digit is present in final answer but is in wrong spot.</span>
+                    <br>
+                    <span class="desc-bottom">Digit in that place is greater  than the Digit you enter.</span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box notlesser"></div>
+                <div class="description">
+                    <span class="desc-top">Digit is NOT present in final answer.</span>
+                    <br>
+                    <span class="desc-bottom">Digit is less than the Digit you enter.</span>
+                </div>
+              </div>
+              <div class="itemlast">
+                <div class="box notgreater"></div>
+                <div class="description">
+                    <span class="desc-top">Digit is NOT present in final answer.</span>
+                    <br>
+                    <span class="desc-bottom">Digit in that place is greater than the Digit you enter.</span>
+                </div>
+              </div>
+          </div>
+        <div class="footer" >Made by Soham</div>
+        <script src ="/index.js" type="module">
+        </script>
+    </body>
+</html>

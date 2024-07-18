@@ -6,7 +6,7 @@ body {
 
 :root {
     --default: #121213;
-    --empty: #3a3a3c;
+    --empty: #d3d3d3;
     --wrong: #b59f3b;
     --right: #538d4e;
     --lesser:#55acee;
@@ -20,6 +20,7 @@ body {
   padding: 20px;
   margin: 20px 0;
   letter-spacing: 2px; 
+  color: #fff;
 }
 
 .footer {
@@ -51,7 +52,7 @@ body {
 .box {
     width: 60px;
     height: 60px;
-    border: 2px solid var(--empty);
+    border: 2px solid #808080;
     margin: 4px;
     color: white;
     text-transform: uppercase;
@@ -88,7 +89,7 @@ body {
 
 
 .container {
-  border: 2px solid #000;
+  border: 2px solid var(--empty);
   padding: 4cqh;
   max-width: 450px;
   margin: 20px auto;
@@ -122,11 +123,13 @@ body {
 .description {
     flex-grow: 1;
     flex-direction: column;
+    color: #fff;
 }
 
 .desc-top,
 .desc-bottom {
   line-height: 2;
+  color: #fff;
 }
 
 .subheading {
@@ -135,4 +138,5 @@ body {
     text-align: center; 
     margin-bottom: 1px;
     letter-spacing: 1px; 
+    color: #fff;
 }
